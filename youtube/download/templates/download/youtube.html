@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+  
+<h1>Youtube video downloader</h1>
+<hr/><hr/>
+<small> Insert into the box Youtube links seperated by whitespace. EX: [link1] [link2] [link3]</small>
+
+<style>
+#textboxid {
+    width:500px;
+}
+</style>
+<form action="" method="post">
+  {% csrf_token %}
+  <label for="link">Enter URL:</label>
+  <input id="textboxid" type="text" id="link" name="link"><br><br>
+  <input type="submit" value="Download" onclick="alert('Downloading! (if valid)')">
+</form> 
+<hr>
+
+<br/><br/>
+<small> Choose a .txt file, .txt file format should be similar to the above format or the following format <br>[link1]</br>[link2]</br>[link3]</br></small>
+<form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.textInput1 }}
+                <input type="file" name="uploaded1" accept=".txt"/>
+                <input type="submit" value="Download"  class="btn btn-primary mb-2" onclick="alert('Downloading! (if valid)')"/>
+</form>
+
+
+</body>
+</html>
