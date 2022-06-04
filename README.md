@@ -12,7 +12,7 @@ install requirements.txt:
 **pip install -r  requirements.txt**
 
 Create and populate the .env file:
-**SECRET_KEY=0000<br>
+<br>**SECRET_KEY=0000<br>
 DEBUG=TRUE**
 
 change directory:
