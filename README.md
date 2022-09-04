@@ -12,8 +12,6 @@ install requirements.txt:
 **pip install -r  requirements.txt**
 
 Create and populate the .env file:
-<br>**SECRET_KEY=0000<br>
-DEBUG=TRUE**
 
 change directory:
 **cd youtube**
